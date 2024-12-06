@@ -1,21 +1,42 @@
-function showSectionById(id){
-    
+
+// show the HISTORY
+document.getElementById('btn-history').addEventListener('click', function(){
+    document.getElementById('transaction-container').classList.remove('hidden');
     document.getElementById('donate-container').classList.add('hidden');
-    document.getElementById('transaction-container').classList.add('hidden');
-
-    document.getElementById(id).classList.remove('hidden');
-}
+})
 
 
+// show the DONATION
 document.getElementById('btn-donate').addEventListener('click', function(){
-    showSectionById('donate-container');
+    document.getElementById('donate-container').classList.remove('hidden');
+    document.getElementById('transaction-container').classList.add('hidden');
 })
 
 
 
-document.getElementById('btn-history').addEventListener('clock', function(){
-    showSectionById('transaction-container')
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
