@@ -10,14 +10,12 @@ document.getElementById('btn-donate-now-1').addEventListener('click', function()
         return;
     }
     
-    if(addMoney > 0){
-        alert('Your Donate is Succesful!');
-        return;
-    }
+    
 
     const newBalance = addMoney + balance;
     document.getElementById('account-balance-1').innerText = newBalance;
 
+    
 
     const mainCashOut = cashOut - newBalance;
     document.getElementById('cash-out').innerText = mainCashOut;
@@ -57,10 +55,7 @@ document.getElementById('btn-donate-now-2').addEventListener('click', function()
         return;
     }
 
-    if(addMoney > 0){
-        alert('Your Donate is Succesful!');
-        return;
-    }
+   
 
     const newBalance = addMoney + balance;
     document.getElementById('account-balance-2').innerText = newBalance;
@@ -103,11 +98,8 @@ document.getElementById('btn-donate-now-3').addEventListener('click', function()
         return;
     }
 
-    if(addMoney > 0){
-        alert('Your Donate is Succesful!');
-        return;
-    }
-    
+   
+
     const newBalance = addMoney + balance;
     document.getElementById('account-balance-3').innerText = newBalance;
 
