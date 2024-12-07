@@ -103,7 +103,7 @@ document.getElementById('btn-donate-now-3').addEventListener('click', function()
     div.classList.add('bg-purple-300'); 
     div.innerHTML = time;
     div.innerHTML = `
-        <p class="text-center px-5 pb-5"> ${addMoney} Taka is Donated for Donate for food at Noakhali Bangladesh</p>
+        <p class="text-center px-5 pb-5 pt-5"> ${addMoney} Taka is Donated for Donate for food at Noakhali Bangladesh</p>
         <P class="text-center pb-5">${time}</P>
     `
     // should be a common function
