@@ -1,14 +1,13 @@
 
 document.getElementById('btn-donate-now-1').addEventListener('click', function(){
+ if(addMoney >= 1 || addMoney <= balance){
+        alert('Your Donate is successful !');
+        return;
+    }
+    
     const addMoney = getInputFieldValueById('input-add-money-1');
     const balance = getTextFieldValueById('account-balance-1');
     const cashOut = getTextFieldValueById('cash-out');
-
-
-    if(addMoney <= 0 || isNaN(addMoney)){
-        alert('Failed to add money!');
-        return;
-    }
 
      if(addMoney >= 1 || addMoney <= balance){
         alert('Your Donate is successful !');
