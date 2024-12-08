@@ -10,7 +10,7 @@ document.getElementById('btn-donate-now-1').addEventListener('click', function()
         return;
     }
 
-     if(addMoney >= 100 && addMoney <= balance){
+     if(addMoney >= 1 || addMoney <= balance){
         alert('Your Donate is successful !');
         return;
     }
