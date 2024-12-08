@@ -9,7 +9,11 @@ document.getElementById('btn-donate-now-1').addEventListener('click', function()
         alert('Failed to add money!');
         return;
     }
-    
+
+     if(addMoney >= 1){
+        alert('Your Donate is successful !');
+        return;
+    }
     
 
     const newBalance = addMoney + balance;
