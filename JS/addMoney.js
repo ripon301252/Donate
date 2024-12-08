@@ -1,18 +1,15 @@
 
 document.getElementById('btn-donate-now-1').addEventListener('click', function(){
- if(addMoney >= 1 || addMoney <= balance){
-        alert('Your Donate is successful !');
-        return;
-    }
-    
     const addMoney = getInputFieldValueById('input-add-money-1');
     const balance = getTextFieldValueById('account-balance-1');
     const cashOut = getTextFieldValueById('cash-out');
 
-     if(addMoney >= 1 || addMoney <= balance){
-        alert('Your Donate is successful !');
+
+    if(addMoney <= 0 || isNaN(addMoney)){
+        alert('Failed to add money!');
         return;
     }
+    
     
 
     const newBalance = addMoney + balance;
@@ -90,7 +87,6 @@ document.getElementById('btn-donate-now-3').addEventListener('click', function()
         return;
     }
 
-   
 
     const newBalance = addMoney + balance;
     document.getElementById('account-balance-3').innerText = newBalance;
